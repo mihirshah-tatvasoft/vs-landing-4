@@ -679,12 +679,17 @@ textarea.form-control {min-height: 140px;}
     p{font-size: 70px;line-height: 110px;}
     span{max-width: 180px;}
   }
+  .showcase .accordion-wrap{max-width: 100%;}
   .other-company{padding: 40px 0;}
   .subscribe-us{
     .img-block{
       .bg-img{top: 0;left: 0;}
       img{top: 0;left: 0;}
     }
+    form{max-width: 100%; padding: 0; .row{margin: 0 -10px;}}
+  }
+  .footer{
+    .container{padding: 0 16px;}
   }
 }
 

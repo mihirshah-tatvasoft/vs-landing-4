@@ -11985,6 +11985,9 @@ textarea.form-control {
   .showcase .count-wrap span {
     max-width: 180px;
   }
+  .showcase .accordion-wrap {
+    max-width: 100%;
+  }
   .other-company {
     padding: 40px 0;
   }
@@ -11995,6 +11998,16 @@ textarea.form-control {
   .subscribe-us .img-block img {
     top: 0;
     left: 0;
+  }
+  .subscribe-us form {
+    max-width: 100%;
+    padding: 0;
+  }
+  .subscribe-us form .row {
+    margin: 0 -10px;
+  }
+  .footer .container {
+    padding: 0 16px;
   }
 }
 @media (max-width: 575px) {

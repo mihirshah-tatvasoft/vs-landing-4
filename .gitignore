@@ -1,0 +1,3 @@
+node_modules
+
+sass --watch assets/css/scss:assets/css

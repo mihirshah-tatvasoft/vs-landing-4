@@ -1,10 +1,15 @@
 {
   "dependencies": {
-    "@studio-freight/lenis": "^1.0.12",
     "bootstrap": "^5.2.3",
     "gsap": "^3.11.5",
     "sass": "^1.59.2",
-    "swiper": "^9.3.2",
-    "typewriter-effect": "^2.19.0"
+    "typewriter-effect": "^2.19.0",
+    "webpack": "^5.84.0"
+  },
+  "devDependencies": {
+    "webpack-cli": "^5.1.1"
+  },
+  "scripts": {
+    "build": "webpack"
   }
 }

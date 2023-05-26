@@ -1,6 +1,18 @@
 //GSAP ScrollTrigger Initialization
 gsap.registerPlugin(ScrollTrigger);
 
+//GSAP ScrollSmoother Initialization
+gsap.registerPlugin(ScrollSmoother);
+gsap.config({ trialWarn: false });
+let smoother = ScrollSmoother.create({
+    wrapper: "#smooth-wrapper",
+    content: "#smooth-content",
+    smooth: 2,
+    smoothTouch: 0.1,
+    effects: true,
+});
+
+
 new Typewriter(".hero-content h2 span", {
     strings: ["Organization", "Company"],
     autoStart: true,
@@ -21,8 +33,8 @@ heroAnimation
         duration: 1,
         ease: "power1.out",
     })
-    .from(".hero .video-wrapper", {
-        opacity: 0,
+    .to(".hero .video-wrapper", {
+        opacity: 1,
         duration: 0.5,
     })
     .from(".hero .hero-content h2", {

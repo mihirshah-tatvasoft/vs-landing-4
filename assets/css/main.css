@@ -10821,24 +10821,9 @@ option:not(:checked) {
   color: black;
 }
 
-html.lenis {
-  height: auto;
-}
-
-.lenis.lenis-smooth {
-  scroll-behavior: auto;
-}
-
-.lenis.lenis-smooth [data-lenis-prevent] {
-  overscroll-behavior: contain;
-}
-
-.lenis.lenis-stopped {
-  overflow: hidden;
-}
-
-.lenis.lenis-scrolling iframe {
-  pointer-events: none;
+::selection {
+  background-color: #F15F79;
+  color: #FFFFFF;
 }
 
 .title {
@@ -11315,6 +11300,7 @@ textarea.form-control {
   background-image: url("../img/hero-gradient.svg");
   background-size: cover;
   background-repeat: no-repeat;
+  opacity: 0;
 }
 .hero .video-wrapper video {
   display: block;

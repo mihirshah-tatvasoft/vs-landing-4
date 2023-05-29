@@ -623,6 +623,7 @@ textarea.form-control {min-height: 140px;}
       &:hover,&:focus{background-color: $light; color: $primary;}
     }
     .offcanvas{background-image: url('../img/hero-gradient.svg'); background-size: cover; background-repeat: no-repeat;object-fit: cover; background-color: transparent;overflow: hidden;}
+    .offcanvas-body{overflow-x: hidden;}
   }
   .statistics{
     .color-layer{justify-content: center; padding-right: 0;

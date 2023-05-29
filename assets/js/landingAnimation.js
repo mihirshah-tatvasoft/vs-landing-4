@@ -47,8 +47,9 @@ heroAnimation
         y: -50,
         duration: 0.5,
     })
-    .from(".hero .btn-groups", {
+    .from(".hero .btn-groups > *", {
         opacity: 0,
+        stagger: { each: 0.1 },
         y: -50,
         duration: 0.5,
     });
@@ -121,7 +122,7 @@ showcase1Anim
         ease: "power1.out",
     })
     .from(lines1, {
-        duration: 0.8,
+        duration: 1.2,
         opacity: 0,
         scale: 0,
         y: 80,
@@ -129,7 +130,7 @@ showcase1Anim
         transformOrigin: "0% 50% -50",
         ease: "back",
         stagger: 0.1,
-    }).from(".showcase .first-row .title-info", {
+    }, "-=0.2").from(".showcase .first-row .title-info", {
         opacity: 0,
         y: -80,
         ease: "power1.out",
@@ -163,14 +164,14 @@ showcase2Anim
         opacity: 0,
         x: "-100%",
         ease: "power1.out",
-    })
+    }, '-=0.2')
     .from(".showcase .second-row .count-wrap span", {
         opacity: 0,
         width: 0,
         ease: "power1.out",
     })
     .from(lines2, {
-        duration: 0.8,
+        duration: 1.2,
         opacity: 0,
         scale: 0,
         y: 80,
@@ -178,7 +179,7 @@ showcase2Anim
         transformOrigin: "0% 50% -50",
         ease: "back",
         stagger: 0.1,
-    }).from(".showcase .second-row .title-info", {
+    }, "-=0.2").from(".showcase .second-row .title-info", {
         opacity: 0,
         y: -80,
         ease: "power1.out",
@@ -219,7 +220,7 @@ showcase3Anim
         ease: "power1.out",
     })
     .from(lines3, {
-        duration: 0.8,
+        duration: 1.2,
         opacity: 0,
         scale: 0,
         y: 80,
@@ -227,7 +228,7 @@ showcase3Anim
         transformOrigin: "0% 50% -50",
         ease: "back",
         stagger: 0.1,
-    }).from(".showcase .third-row .title-info", {
+    }, "-=0.2").from(".showcase .third-row .title-info", {
         opacity: 0,
         y: -80,
         ease: "power1.out",
@@ -331,5 +332,18 @@ footerAnim
             each: 0.2,
         },
         ease: "power1.out",
-    })
+    });
 
+
+// navlink animation for mobile
+const headerAnimation = gsap.timeline();
+headerAnimation.staggerFrom(
+    ".header .navbar-nav .nav-link",
+    0.5,
+    {
+        opacity: 0,
+        x: "-100%",
+        ease: "back"
+    },
+    0.08,
+);

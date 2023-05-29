@@ -1,8 +1,6 @@
 // Add new js functions here -----------------------------------------------------------------
 
 const docBody = document.body;
-const myOffcanvas = document.getElementById('offcanvasExample');
-
 
 // OnScroll event handler
 const onScroll = () => {
@@ -40,17 +38,10 @@ window.addEventListener("load", function () {
     }
   });
 
-  // const lenis = new Lenis()
-  // function raf(time) {
-  //   lenis.raf(time)
-  //   requestAnimationFrame(raf)
-  // }
-
-  // requestAnimationFrame(raf);
-
   function smoothScroll(target, duration) {
     var targetSection = document.querySelector(target);
-    var targetPosition = targetSection.offsetTop;
+    var offset = 50;
+    var targetPosition = targetSection.offsetTop - offset;
     var startPosition = window.pageYOffset;
     var distance = targetPosition - startPosition;
     var startTime = null;
@@ -77,51 +68,15 @@ window.addEventListener("load", function () {
   myLink.forEach(anchor => {
     anchor.addEventListener('click', function (e) {
       e.preventDefault();
-      // for (let i = 0; i < myLink.length; i++) {
-      //   myLink[i].classList.remove("active");
-      // }
-      // this.classList.add("active");
-      // lenis.start();
-      // lenis.scrollTo(this.getAttribute('href'));
-      // let rect = 0;
-      // console.log(this.getAttribute('href'))
-      // let tempScrollPos = this.getAttribute('href');
-      // var res = tempScrollPos.replace('#', "");
-      // let finalScrollPos = document.getElementById(res);
-      // console.log(finalScrollPos)
-      // rect = finalScrollPos.getBoundingClientRect();
-      // console.log(rect.top)
-      // window.scrollTo(0, rect.top);
-
       var target = this.getAttribute('href');
       var duration = 500; // Set the duration of the scroll animation (in milliseconds)
       smoothScroll(target, duration);
 
     });
-  })
+  });
 
-  // const toggleMenu = document.getElementById('navbarToggler');
-  // toggleMenu.addEventListener('click', event => {
-  //   lenis.stop();
-  // })
-
-  // myOffcanvas.addEventListener('hidden.bs.offcanvas', event => {
-  //   lenis.start();
-  // })
-
-  // function myFunction(x) {
-  //   if (x.matches) { // If media query matches
-  //     lenis.destroy();
-  //     console.log("dddddddd")
-  //   } else {
-  //     lenis.start();
-  //   }
-  // }
-
-  // var x = window.matchMedia("(max-width: 991px)");
-  // myFunction(x)
-  // x.addListener(myFunction)
-
+  var navTogglerBtn = document.getElementById('navbarToggler');
+  navTogglerBtn.addEventListener('click', () => { headerAnimation.restart(); });
 });
 // --------------------------------------------------------------------------------------------
 // Don't add anything below this --------------------------------------------------------------

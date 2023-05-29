@@ -1279,6 +1279,9 @@ textarea.form-control {
     background-color: transparent;
     overflow: hidden;
   }
+  .header .offcanvas-body {
+    overflow-x: hidden;
+  }
   .statistics .color-layer {
     justify-content: center;
     padding-right: 0;

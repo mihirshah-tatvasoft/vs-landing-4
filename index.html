@@ -59,7 +59,7 @@
                 ></button>
               </div>
               <div class="offcanvas-body">
-                <ul class="navbar-nav ms-auto">
+                <ul class="navbar-nav ms-lg-auto">
                   <li class="nav-item" data-bs-dismiss="offcanvas">
                     <a
                       class="nav-link active"
@@ -189,11 +189,16 @@
               <div class="container">
                 <div class="row">
                   <div class="col-md-4">
-                    <div class="card" data-tilt data-tilt-max="20">
+                    <div
+                      class="card"
+                      data-tilt
+                      data-tilt-max="20"
+                      data-tilt-reverse="true"
+                    >
                       <div class="img-block">
                         <img src="./assets/img/block-app.svg" alt="Icon" />
                       </div>
-                      <h4 class="card-title">Bloack Applications</h4>
+                      <h4 class="card-title">Block Applications</h4>
                       <span class="card-info"
                         >Lorem ipsum dolor sit amet, consectetur adipiscing
                         elit. Maecenas sollicitudin nunc arcu velit</span
@@ -203,7 +208,12 @@
                   </div>
 
                   <div class="col-md-4">
-                    <div class="card" data-tilt data-tilt-max="20">
+                    <div
+                      class="card"
+                      data-tilt
+                      data-tilt-max="20"
+                      data-tilt-reverse="true"
+                    >
                       <div class="img-block">
                         <img src="./assets/img/building.svg" alt="Icon" />
                       </div>
@@ -219,7 +229,12 @@
                   </div>
 
                   <div class="col-md-4">
-                    <div class="card" data-tilt data-tilt-max="20">
+                    <div
+                      class="card"
+                      data-tilt
+                      data-tilt-max="20"
+                      data-tilt-reverse="true"
+                    >
                       <div class="img-block">
                         <img src="./assets/img/mobile-app.svg" alt="Icon" />
                       </div>
@@ -482,100 +497,102 @@
             </section>
             <!-- showcase End -->
 
-            <!-- statistics Start -->
-            <section class="statistics" id="data-section">
-              <div class="bgshape d-right">
-                <img
-                  src="./assets/img/r-shape-light.svg"
-                  class="light"
-                  alt="Shape"
-                />
-                <img
-                  src="./assets/img/r-shape-dark.svg"
-                  class="dark"
-                  alt="Shape"
-                />
-              </div>
-              <div class="statistics-wrap">
-                <div class="container-fluid">
-                  <div class="row">
-                    <div class="col-lg-5 col-md-3">
-                      <div class="color-layer">
-                        <div class="block">
-                          <img src="./assets/img/block-app.svg" alt="Icon" />
-                          <span>Company</span>
+            <div id="data-section">
+              <!-- statistics Start -->
+              <section class="statistics">
+                <div class="bgshape d-right">
+                  <img
+                    src="./assets/img/r-shape-light.svg"
+                    class="light"
+                    alt="Shape"
+                  />
+                  <img
+                    src="./assets/img/r-shape-dark.svg"
+                    class="dark"
+                    alt="Shape"
+                  />
+                </div>
+                <div class="statistics-wrap">
+                  <div class="container-fluid">
+                    <div class="row">
+                      <div class="col-lg-5 col-md-3">
+                        <div class="color-layer">
+                          <div class="block">
+                            <img src="./assets/img/block-app.svg" alt="Icon" />
+                            <span>Company</span>
+                          </div>
                         </div>
                       </div>
-                    </div>
-                    <div class="col-lg-7 col-md-9">
-                      <div class="inner-row">
-                        <div>
-                          <div class="row" data-module="countup">
-                            <div class="col-sm-4 col-6">
-                              <h3 class="data-number">
-                                <span
-                                  class="stat-number"
-                                  data-countup-number="100"
-                                  >100</span
+                      <div class="col-lg-7 col-md-9">
+                        <div class="inner-row">
+                          <div>
+                            <div class="row" data-module="countup">
+                              <div class="col-sm-4 col-6">
+                                <h3 class="data-number">
+                                  <span
+                                    class="stat-number"
+                                    data-countup-number="100"
+                                    >100</span
+                                  >
+                                  <span class="stat-suffix">%</span>
+                                </h3>
+                                <span class="data-info">Sass Technology</span>
+                              </div>
+                              <div class="col-sm-4 col-6">
+                                <h3 class="data-number">
+                                  <span
+                                    class="stat-number"
+                                    data-countup-number="100000"
+                                    >100,0000</span
+                                  >
+                                </h3>
+                                <span class="data-info">Endpoints tenant</span>
+                              </div>
+                              <div class="col-sm-4 col-6">
+                                <h3 class="data-number">
+                                  <span
+                                    class="stat-number"
+                                    data-countup-number="100"
+                                    >100</span
+                                  >
+                                  <span class="stat-suffix">+</span>
+                                </h3>
+                                <span class="data-info"
+                                  >Threat intel Sources</span
                                 >
-                                <span class="stat-suffix">%</span>
-                              </h3>
-                              <span class="data-info">Sass Technology</span>
-                            </div>
-                            <div class="col-sm-4 col-6">
-                              <h3 class="data-number">
-                                <span
-                                  class="stat-number"
-                                  data-countup-number="100000"
-                                  >100,0000</span
-                                >
-                              </h3>
-                              <span class="data-info">Endpoints tenant</span>
-                            </div>
-                            <div class="col-sm-4 col-6">
-                              <h3 class="data-number">
-                                <span
-                                  class="stat-number"
-                                  data-countup-number="100"
-                                  >100</span
-                                >
-                                <span class="stat-suffix">+</span>
-                              </h3>
-                              <span class="data-info"
-                                >Threat intel Sources</span
-                              >
-                            </div>
-                            <div class="col-sm-4 col-6">
-                              <h3 class="data-number">
-                                <span
-                                  class="stat-number"
-                                  data-countup-number="124"
-                                  >124</span
-                                >
-                              </h3>
-                              <span class="data-info">Active Projects</span>
-                            </div>
-                            <div class="col-sm-4 col-6">
-                              <h3 class="data-number">
-                                <span
-                                  class="stat-number"
-                                  data-countup-number="1400"
-                                  >1400</span
-                                >
-                                <span class="stat-suffix">+</span>
-                              </h3>
-                              <span class="data-info">Built in queries</span>
-                            </div>
-                            <div class="col-sm-4 col-6">
-                              <h3 class="data-number">
-                                <span
-                                  class="stat-number"
-                                  data-countup-number="200"
-                                  >200</span
-                                >
-                                <span class="stat-suffix">+</span>
-                              </h3>
-                              <span class="data-info">Customers</span>
+                              </div>
+                              <div class="col-sm-4 col-6">
+                                <h3 class="data-number">
+                                  <span
+                                    class="stat-number"
+                                    data-countup-number="124"
+                                    >124</span
+                                  >
+                                </h3>
+                                <span class="data-info">Active Projects</span>
+                              </div>
+                              <div class="col-sm-4 col-6">
+                                <h3 class="data-number">
+                                  <span
+                                    class="stat-number"
+                                    data-countup-number="1400"
+                                    >1400</span
+                                  >
+                                  <span class="stat-suffix">+</span>
+                                </h3>
+                                <span class="data-info">Built in queries</span>
+                              </div>
+                              <div class="col-sm-4 col-6">
+                                <h3 class="data-number">
+                                  <span
+                                    class="stat-number"
+                                    data-countup-number="200"
+                                    >200</span
+                                  >
+                                  <span class="stat-suffix">+</span>
+                                </h3>
+                                <span class="data-info">Customers</span>
+                              </div>
                             </div>
                           </div>
                         </div>
@@ -583,202 +600,202 @@
                     </div>
                   </div>
                 </div>
-              </div>
-            </section>
-            <!-- statistics Start -->
+              </section>
+              <!-- statistics Start -->
 
-            <!-- other-company Start -->
-            <section class="other-company" id="other-company">
-              <div class="marquee">
-                <div class="marquee-group">
-                  <div class="img-block">
-                    <img
-                      src="./assets/img/ic-mask-adidas.svg"
-                      alt="Adidas"
-                      class="mask-img"
-                    />
-                    <img
-                      src="./assets/img/ic-color-adidas.svg"
-                      alt="Adidas"
-                      class="color-img"
-                    />
+              <!-- other-company Start -->
+              <section class="other-company" id="other-company">
+                <div class="marquee">
+                  <div class="marquee-group">
+                    <div class="img-block">
+                      <img
+                        src="./assets/img/ic-mask-adidas.svg"
+                        alt="Adidas"
+                        class="mask-img"
+                      />
+                      <img
+                        src="./assets/img/ic-color-adidas.svg"
+                        alt="Adidas"
+                        class="color-img"
+                      />
+                    </div>
+                    <div class="img-block">
+                      <img
+                        src="./assets/img/ic-mask-parle.svg"
+                        alt="Parle"
+                        class="mask-img"
+                      />
+                      <img
+                        src="./assets/img/ic-color-parle.svg"
+                        alt="Parle"
+                        class="color-img"
+                      />
+                    </div>
+                    <div class="img-block">
+                      <img
+                        src="./assets/img/ic-mask-fedex.svg"
+                        alt="FedEx"
+                        class="mask-img"
+                      />
+                      <img
+                        src="./assets/img/ic-color-fedex.svg"
+                        alt="FedEx"
+                        class="color-img"
+                      />
+                    </div>
+                    <div class="img-block">
+                      <img
+                        src="./assets/img/ic-mask-reebok.svg"
+                        alt="Reebok"
+                        class="mask-img"
+                      />
+                      <img
+                        src="./assets/img/ic-color-reebok.svg"
+                        alt="Reebok"
+                        class="color-img"
+                      />
+                    </div>
+                    <div class="img-block">
+                      <img
+                        src="./assets/img/ic-mask-sony.svg"
+                        alt="Sony"
+                        class="mask-img"
+                      />
+                      <img
+                        src="./assets/img/ic-color-sony.svg"
+                        alt="Sony"
+                        class="color-img"
+                      />
+                    </div>
                   </div>
-                  <div class="img-block">
-                    <img
-                      src="./assets/img/ic-mask-parle.svg"
-                      alt="Parle"
-                      class="mask-img"
-                    />
-                    <img
-                      src="./assets/img/ic-color-parle.svg"
-                      alt="Parle"
-                      class="color-img"
-                    />
+                  <div class="marquee-group">
+                    <div class="img-block">
+                      <img
+                        src="./assets/img/ic-mask-adidas.svg"
+                        alt="Adidas"
+                        class="mask-img"
+                      />
+                      <img
+                        src="./assets/img/ic-color-adidas.svg"
+                        alt="Adidas"
+                        class="color-img"
+                      />
+                    </div>
+                    <div class="img-block">
+                      <img
+                        src="./assets/img/ic-mask-parle.svg"
+                        alt="Parle"
+                        class="mask-img"
+                      />
+                      <img
+                        src="./assets/img/ic-color-parle.svg"
+                        alt="Parle"
+                        class="color-img"
+                      />
+                    </div>
+                    <div class="img-block">
+                      <img
+                        src="./assets/img/ic-mask-fedex.svg"
+                        alt="FedEx"
+                        class="mask-img"
+                      />
+                      <img
+                        src="./assets/img/ic-color-fedex.svg"
+                        alt="FedEx"
+                        class="color-img"
+                      />
+                    </div>
+                    <div class="img-block">
+                      <img
+                        src="./assets/img/ic-mask-reebok.svg"
+                        alt="Reebok"
+                        class="mask-img"
+                      />
+                      <img
+                        src="./assets/img/ic-color-reebok.svg"
+                        alt="Reebok"
+                        class="color-img"
+                      />
+                    </div>
+                    <div class="img-block">
+                      <img
+                        src="./assets/img/ic-mask-sony.svg"
+                        alt="Sony"
+                        class="mask-img"
+                      />
+                      <img
+                        src="./assets/img/ic-color-sony.svg"
+                        alt="Sony"
+                        class="color-img"
+                      />
+                    </div>
                   </div>
-                  <div class="img-block">
-                    <img
-                      src="./assets/img/ic-mask-fedex.svg"
-                      alt="FedEx"
-                      class="mask-img"
-                    />
-                    <img
-                      src="./assets/img/ic-color-fedex.svg"
-                      alt="FedEx"
-                      class="color-img"
-                    />
-                  </div>
-                  <div class="img-block">
-                    <img
-                      src="./assets/img/ic-mask-reebok.svg"
-                      alt="Reebok"
-                      class="mask-img"
-                    />
-                    <img
-                      src="./assets/img/ic-color-reebok.svg"
-                      alt="Reebok"
-                      class="color-img"
-                    />
-                  </div>
-                  <div class="img-block">
-                    <img
-                      src="./assets/img/ic-mask-sony.svg"
-                      alt="Sony"
-                      class="mask-img"
-                    />
-                    <img
-                      src="./assets/img/ic-color-sony.svg"
-                      alt="Sony"
-                      class="color-img"
-                    />
+                  <div class="marquee-group">
+                    <div class="img-block">
+                      <img
+                        src="./assets/img/ic-mask-adidas.svg"
+                        alt="Adidas"
+                        class="mask-img"
+                      />
+                      <img
+                        src="./assets/img/ic-color-adidas.svg"
+                        alt="Adidas"
+                        class="color-img"
+                      />
+                    </div>
+                    <div class="img-block">
+                      <img
+                        src="./assets/img/ic-mask-parle.svg"
+                        alt="Parle"
+                        class="mask-img"
+                      />
+                      <img
+                        src="./assets/img/ic-color-parle.svg"
+                        alt="Parle"
+                        class="color-img"
+                      />
+                    </div>
+                    <div class="img-block">
+                      <img
+                        src="./assets/img/ic-mask-fedex.svg"
+                        alt="FedEx"
+                        class="mask-img"
+                      />
+                      <img
+                        src="./assets/img/ic-color-fedex.svg"
+                        alt="FedEx"
+                        class="color-img"
+                      />
+                    </div>
+                    <div class="img-block">
+                      <img
+                        src="./assets/img/ic-mask-reebok.svg"
+                        alt="Reebok"
+                        class="mask-img"
+                      />
+                      <img
+                        src="./assets/img/ic-color-reebok.svg"
+                        alt="Reebok"
+                        class="color-img"
+                      />
+                    </div>
+                    <div class="img-block">
+                      <img
+                        src="./assets/img/ic-mask-sony.svg"
+                        alt="Sony"
+                        class="mask-img"
+                      />
+                      <img
+                        src="./assets/img/ic-color-sony.svg"
+                        alt="Sony"
+                        class="color-img"
+                      />
+                    </div>
                   </div>
                 </div>
-                <div class="marquee-group">
-                  <div class="img-block">
-                    <img
-                      src="./assets/img/ic-mask-adidas.svg"
-                      alt="Adidas"
-                      class="mask-img"
-                    />
-                    <img
-                      src="./assets/img/ic-color-adidas.svg"
-                      alt="Adidas"
-                      class="color-img"
-                    />
-                  </div>
-                  <div class="img-block">
-                    <img
-                      src="./assets/img/ic-mask-parle.svg"
-                      alt="Parle"
-                      class="mask-img"
-                    />
-                    <img
-                      src="./assets/img/ic-color-parle.svg"
-                      alt="Parle"
-                      class="color-img"
-                    />
-                  </div>
-                  <div class="img-block">
-                    <img
-                      src="./assets/img/ic-mask-fedex.svg"
-                      alt="FedEx"
-                      class="mask-img"
-                    />
-                    <img
-                      src="./assets/img/ic-color-fedex.svg"
-                      alt="FedEx"
-                      class="color-img"
-                    />
-                  </div>
-                  <div class="img-block">
-                    <img
-                      src="./assets/img/ic-mask-reebok.svg"
-                      alt="Reebok"
-                      class="mask-img"
-                    />
-                    <img
-                      src="./assets/img/ic-color-reebok.svg"
-                      alt="Reebok"
-                      class="color-img"
-                    />
-                  </div>
-                  <div class="img-block">
-                    <img
-                      src="./assets/img/ic-mask-sony.svg"
-                      alt="Sony"
-                      class="mask-img"
-                    />
-                    <img
-                      src="./assets/img/ic-color-sony.svg"
-                      alt="Sony"
-                      class="color-img"
-                    />
-                  </div>
-                </div>
-                <div class="marquee-group">
-                  <div class="img-block">
-                    <img
-                      src="./assets/img/ic-mask-adidas.svg"
-                      alt="Adidas"
-                      class="mask-img"
-                    />
-                    <img
-                      src="./assets/img/ic-color-adidas.svg"
-                      alt="Adidas"
-                      class="color-img"
-                    />
-                  </div>
-                  <div class="img-block">
-                    <img
-                      src="./assets/img/ic-mask-parle.svg"
-                      alt="Parle"
-                      class="mask-img"
-                    />
-                    <img
-                      src="./assets/img/ic-color-parle.svg"
-                      alt="Parle"
-                      class="color-img"
-                    />
-                  </div>
-                  <div class="img-block">
-                    <img
-                      src="./assets/img/ic-mask-fedex.svg"
-                      alt="FedEx"
-                      class="mask-img"
-                    />
-                    <img
-                      src="./assets/img/ic-color-fedex.svg"
-                      alt="FedEx"
-                      class="color-img"
-                    />
-                  </div>
-                  <div class="img-block">
-                    <img
-                      src="./assets/img/ic-mask-reebok.svg"
-                      alt="Reebok"
-                      class="mask-img"
-                    />
-                    <img
-                      src="./assets/img/ic-color-reebok.svg"
-                      alt="Reebok"
-                      class="color-img"
-                    />
-                  </div>
-                  <div class="img-block">
-                    <img
-                      src="./assets/img/ic-mask-sony.svg"
-                      alt="Sony"
-                      class="mask-img"
-                    />
-                    <img
-                      src="./assets/img/ic-color-sony.svg"
-                      alt="Sony"
-                      class="color-img"
-                    />
-                  </div>
-                </div>
-              </div>
-            </section>
-            <!-- other-company End -->
+              </section>
+              <!-- other-company End -->
+            </div>
 
             <!-- subscribe-us Start -->
             <section class="subscribe-us" id="contact-us">

@@ -122,7 +122,7 @@ showcase1Anim
         ease: "power1.out",
     })
     .from(lines1, {
-        duration: 1.2,
+        duration: 1.4,
         opacity: 0,
         scale: 0,
         y: 80,
@@ -171,7 +171,7 @@ showcase2Anim
         ease: "power1.out",
     })
     .from(lines2, {
-        duration: 1.2,
+        duration: 1.4,
         opacity: 0,
         scale: 0,
         y: 80,
@@ -220,7 +220,7 @@ showcase3Anim
         ease: "power1.out",
     })
     .from(lines3, {
-        duration: 1.2,
+        duration: 1.4,
         opacity: 0,
         scale: 0,
         y: 80,
@@ -331,6 +331,7 @@ footerAnim
         stagger: {
             each: 0.2,
         },
+        duration: 1,
         ease: "power1.out",
     });
 

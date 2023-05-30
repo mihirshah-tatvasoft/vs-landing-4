@@ -340,7 +340,7 @@ footerAnim
 const headerAnimation = gsap.timeline();
 headerAnimation.staggerFrom(
     ".header .navbar-nav .nav-link",
-    0.5,
+    0.8,
     {
         opacity: 0,
         x: "-100%",

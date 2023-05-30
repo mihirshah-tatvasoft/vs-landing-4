@@ -619,7 +619,7 @@ textarea.form-control {min-height: 140px;}
   
     .navbar-nav .nav-link span::after{display: none;}
     .navbar-nav .nav-item{margin-bottom: 8px;}
-    .navbar-nav .nav-link{border-radius: 8px; text-align: center;
+    .navbar-nav .nav-link{border-radius: 8px; text-align: center; font-size: 22px;line-height: 26px; padding: 12px 25px;
       &:hover,&:focus{background-color: $light; color: $primary;}
     }
     .offcanvas{background-image: url('../img/hero-gradient.svg'); background-size: cover; background-repeat: no-repeat;object-fit: cover; background-color: transparent;overflow: hidden;}

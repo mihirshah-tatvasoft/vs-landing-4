@@ -6,26 +6,17 @@ const sourcemaps = require('gulp-sourcemaps');
 const uglify = require('gulp-uglify');
 const gulpif = require('gulp-if');
 const cleanCss = require('gulp-clean-css');
+const browserSync = require('browser-sync').create();
+var jsLocalPath = require('./assets/js/main.js');
 let buildPath = '';
 
 const jsBuild = () => {
-    return src([
-        './node_modules/bootstrap/dist/js/bootstrap.bundle.min.js',
-        'assets/js/tilt.js',
-        './node_modules/typewriter-effect/dist/core.js',
-        './node_modules/gsap/dist/gsap.min.js',
-        './node_modules/gsap/dist/ScrollTrigger.min.js',
-        'assets/js/ScrollSmoother.js',
-        'assets/js/numberIncrement.js',
-        'assets/js/splitType.js',
-        'assets/js/custom.js',
-        'assets/js/landingAnimation.js'
-    ])
+    return src(jsLocalPath.jsPath)
         .pipe(gulpif(buildPath == '', sourcemaps.init()))
-        .pipe(concat('main.js'))
+        .pipe(concat('code.js'))
         .pipe(gulpif(buildPath == '', sourcemaps.write()))
         .pipe(gulpif(buildPath != '', uglify()))
-        .pipe(dest(buildPath + 'assets/js/'));
+        .pipe(dest(buildPath + 'assets/js/'))
 }
 
 const cssBuild = () => {
@@ -35,17 +26,30 @@ const cssBuild = () => {
         .pipe(gulpif(buildPath == '', sourcemaps.write()))
         .pipe(gulpif(buildPath != '', cleanCss()))
         .pipe(rename('main.css'))
-        .pipe(dest(buildPath + 'assets/css/'));
+        .pipe(dest(buildPath + 'assets/css/'))
+}
+
+const browserRefresh = () => {
+    return browserSync.reload();
 }
 
 function start(cb) {
+    browserSync.init({
+        server: {
+            baseDir: './'
+        }
+    });
     series(jsBuild, cssBuild)();
-    watch(['assets/js/*.js', '!assets/js/main.js'], (cb) => {
-        jsBuild();
+    watch(['assets/js/*.js', '!assets/js/code.js'], (cb) => {
+        series(jsBuild, browserRefresh)();
         cb();
     });
     watch('assets/css/*.scss', (cb) => {
-        cssBuild();
+        series(cssBuild, browserRefresh)();
+        cb();
+    });
+    watch('./*.html', (cb) => {
+        browserRefresh();
         cb();
     });
     cb();

@@ -13,8 +13,6 @@ const onScroll = () => {
   }
 };
 
-
-
 // Use the function
 window.addEventListener("scroll", onScroll);
 
